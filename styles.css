@@ -1,0 +1,152 @@
+body{
+    background-color: rgb(148, 123, 176);
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+h1{
+    font-weight: bold;
+} 
+h3{
+    font-weight: unset;
+}
+button{
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+button:active, a:active{
+    transform: scale(0.95)
+}
+button:focus { 
+    outline: none; 
+}
+.block{
+    max-width: 1300px;
+    margin: auto;
+}
+.navbar{
+    width: -webkit-fill-available;
+    position: absolute;
+    max-width: 1300px;
+    z-index: 1;
+}
+.navbar2{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 24px;
+}
+.company{
+    width: 15%;
+}
+.nav{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.button{
+    width: 15%;
+    display: flex;
+    justify-content: flex-end;
+}
+.boxes{
+    max-width: 1300px;
+    display: flex;
+    z-index: -1;
+}
+.purple{
+    width: 30%;
+    height: 540px;
+    background-color: rgb(148, 123, 176);
+    display: flex;
+    position: static;
+    align-items: center;
+}
+.main-2{
+    display: flex;
+    width: 75%;
+    
+}
+.one, .two, .three{
+    width: calc(100% / 3);
+    display: flex;
+    position: static;
+    align-items: center;
+}
+.one{
+    background-image: url(images/n.jpg);
+    background-position: 0% 0%;
+    background-size: cover;
+}
+.two{
+    background-image: url(images/2.jpg);
+    background-position: 0% 0%;
+    background-size: cover;
+}
+.three{
+    background-image: url(images/3.jpg);
+    background-position: 0% 0%;
+    background-size: cover;
+}
+#eql{
+    height: 50%;
+    padding: 64px 24px 0 24px;
+}
+.short-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+hr{
+    border: 2px solid black;
+    width: 130px;
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+    align-items: center;
+    text-align: center;
+    margin-top: 75px;
+}
+.table{
+    display: flex;
+    justify-content: center;
+}
+.column{
+    width: 20%;
+    margin: 20px 15px 0 0;
+}
+.color-change{
+    border: 8px solid rgb(166, 139, 195);
+    width: 1284px;
+    margin-top: 90px;
+}
+.footer{
+    max-width: 1300px;
+}
+.school{
+    text-align: center;
+    margin: 40px 0 35px 0;
+}
+.code{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+}
+.studies{
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+}
+i{
+    scale: 
+}
