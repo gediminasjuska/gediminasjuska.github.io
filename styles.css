@@ -24,7 +24,7 @@ button{
 .mobile-menu{
     display: none;
 }
-button:active, a:active{
+button:active, a:active, .fa-bars:active, .fa-github:active{
     transform: scale(0.95)
 }
 button:focus { 
@@ -90,20 +90,20 @@ button:focus {
     display: flex;
     position: static;
     align-items: center;
-    opacity: 0.8;
+    
 }
 .one{
-    background-image: url(images/n.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.23) ), url(images/n.jpg);
     background-position: 0% 0%;
     background-size: cover;
 }
 .two{
-    background-image: url(images/2.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.23) ), url(images/2.jpg);
     background-position: 0% 0%;
     background-size: cover;
 }
 .three{
-    background-image: url(images/3.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.23) ), url(images/3.jpg);
     background-position: 0% 0%;
     background-size: cover;
 }
