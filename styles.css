@@ -21,6 +21,9 @@ button{
     border-radius: 2px;
     cursor: pointer;
 }
+.mobile-menu{
+    display: none;
+}
 button:active, a:active{
     transform: scale(0.95)
 }
@@ -57,6 +60,12 @@ button:focus {
     display: flex;
     justify-content: flex-end;
 }
+.button-mobile{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
 .boxes{
     max-width: 1300px;
     display: flex;
@@ -73,6 +82,7 @@ button:focus {
 .main-2{
     display: flex;
     width: 75%;
+    background-color: black;
     
 }
 .one, .two, .three{
@@ -80,6 +90,7 @@ button:focus {
     display: flex;
     position: static;
     align-items: center;
+    opacity: 0.8;
 }
 .one{
     background-image: url(images/n.jpg);
@@ -99,6 +110,9 @@ button:focus {
 #eql{
     height: 50%;
     padding: 64px 24px 0 24px;
+}
+.mobile-change{
+    display: block;
 }
 .short-info{
     display: flex;
@@ -146,4 +160,49 @@ hr{
     font-size: 18px;
     margin: 0;
     font-weight: bold;
+}
+@media(max-width: 1200px){
+    .nav{
+        max-width: 1200px;
+        display: none;
+    }
+    .boxes{
+        max-width: 1200px;
+        display: block;
+    }
+    .main-2{
+        height: 540px;
+        width: 100%;
+    }
+    .button{
+        display: none;
+    }
+    .purple{
+        width: 100%;
+    }
+    .button-mobile{
+        bottom: 30%;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+    #mobile-button{
+        color: white;
+        background: transparent;
+        border: 1.2px solid white;
+        padding: 10px 32px;
+        border-radius: 2px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    .fa-bars{
+        color: black;
+        background-color: white;
+        padding: 9px;
+        border-radius: 47%;
+    }
 }
