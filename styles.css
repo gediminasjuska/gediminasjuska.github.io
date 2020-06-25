@@ -161,13 +161,23 @@ hr{
     margin: 0;
     font-weight: bold;
 }
+.purple-top{
+    display: none;
+}
 @media(max-width: 1200px){
+    .block{
+        width: 100%; 
+        margin: auto;
+    }
+    .navbar{
+        width: 100%; 
+    }
     .nav{
-        max-width: 1200px;
+        width: 100%; 
         display: none;
     }
     .boxes{
-        max-width: 1200px;
+        width: 100%; 
         display: block;
     }
     .main-2{
@@ -179,10 +189,11 @@ hr{
     }
     .purple{
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
     .button-mobile{
-        bottom: 30%;
-        position: absolute;
         width: 100%;
         text-align: center;
         display: block;
@@ -204,5 +215,76 @@ hr{
         background-color: white;
         padding: 9px;
         border-radius: 47%;
+    }
+    .color-change{
+        width: 100%;
+        margin-right: 0;
+    }
+    .purple-top{
+        display: block;
+        width: 100%;
+    }
+    .footer{
+        max-width: 1200px;
+    }
+    .footer > .color-change{
+        width: auto;
+    }
+    
+}
+@media (max-width: 720px){
+    .main-2{
+        display: block;
+        height: 720px;
+    }
+    .one, .two, .three{
+        width: auto;
+        background-position: 0% 53%;
+        height: calc(100% / 3);
+    }
+    .one > #eql{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 74%;
+        padding: 10px 40px 10px 54px;
+    }
+    .two > #eql{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 74%;
+        padding: 10px 40px 10px 54px;
+    }
+    .three > #eql{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 74%;
+        padding: 10px 40px 10px 54px;
+    }
+    h1{
+        margin: 0;
+    }
+    h3{
+        margin: 0;
+    }
+    .middle{
+        width: 100%;
+    }
+    .table{
+        display: block;
+    }
+    .column{
+        width: 100%;
+    }
+    .column > p, h2, i{
+        padding: 0 29px;
+    }
+    .school > .github{
+        font-size: 8px;
+    }
+    a > .fa-github{
+        padding: 5px;
     }
 }
