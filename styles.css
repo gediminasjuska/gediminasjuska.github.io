@@ -162,7 +162,7 @@ hr{
     font-weight: bold;
 }
 .purple-top{
-    display: none;
+    display: contents;
 }
 @media(max-width: 1200px){
     .block{
