@@ -98,10 +98,42 @@ button:focus {
     z-index: 1;
     text-align: -webkit-center;
 }
+.logo{
+    height: auto;
+    width: auto;
+}
+.triangle2{
+    position: absolute;
+    margin-left: 24px;
+    top: 141px;
+    height: 46px;
+    width: 20px;
+    border-bottom: 1px solid white;
+    transform: scaleY(0.65);
+}
+.circle2{
+    border: 1px solid white;
+    border-radius: 50%;
+    background: rgba(0,0,0,0);
+    color: white;
+    position: absolute;
+    margin-left: 29px;
+    height: 24px;
+    width: 24px;
+    top: 154px;
+}
+.square2{
+    border: 1px solid white;
+    position: absolute;
+    top: 154px;
+    width: 24px;
+    height: 24px;
+    margin-left: 42px;
+}
 .triangle{
     position: relative;
-    width: 175px;
-    height: 337px;
+    width: 144px;
+    height: 345px;
     transform: scaleY(0.65);
     border-bottom: 1px solid white;
 }
@@ -115,16 +147,49 @@ button:focus {
 .triangle:before {
     border-left: 1px solid white;
     left: 0;
-    transform: rotate(15deg);
+    transform: rotate(12deg);
     transform-origin: bottom left;
   }
   
 .triangle:after {
     border-right: 1px solid white;
     right: 0;
-    transform: rotate(-15deg);
+    transform: rotate(-12deg);
     transform-origin: bottom right;
   }
+  .triangle2:before, .triangle2:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+  }
+  
+.triangle2:before {
+    border-left: 1px solid white;
+    left: 0;
+    transform: rotate(12deg);
+    transform-origin: bottom left;
+  }
+  
+.triangle2:after {
+    border-right: 1px solid white;
+    right: 0;
+    transform: rotate(-12deg);
+    transform-origin: bottom right;
+  }
+.circle{
+    border: 1px solid white;
+    border-radius: 50%;
+    background: rgba(0,0,0,0);
+    color: white;
+    width: 217.7px;
+    height: 217.7px;
+}
+.square{
+    border: 1px solid white;
+    width: 217.7px;
+    height: 217.7px;
+}
 .one{
     background-image: linear-gradient( rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.23) ), url(images/n.jpg);
     background-position: 0% 0%;
@@ -263,7 +328,9 @@ hr{
     .footer > .color-change{
         width: auto;
     }
-    
+    .triangle2, .circle2, .square2{
+        display: none;
+    }
 }
 @media (max-width: 720px){
     .main-2{
